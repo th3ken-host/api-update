@@ -131,12 +131,12 @@ cd C:\
 cls
 color b
 @echo off
-ping 128.116.123.3 -n 2
+ping 216.58.215.238 -n 2
 cls
 netsh interface ipv4 set subinterface "Ethernet" mtu=1464 store=persistent
 ipconfig /release
 ipconfig /renew
-ping 128.116.123.3 -n 2
+ping 216.58.215.238 -n 2
 netsh int tcp set heuristics disabled
 netsh int tcp set global rss=enabled
 netsh int tcp set global chimney=enabled
@@ -184,7 +184,7 @@ netsh int tcp set global chimney=disabled
 netsh interface ipv4 set subinterface "Local Area Connection" mtu=150 store=persistent
 netsh int tcp set global rss=default
 netsh int tcp set heuristics disabled
-start ping 128.116.123.3 -t -l 65500
+start ping 216.58.215.238 -t -l 65500
 ipconfig /flushdns
 netsh int tcp set heuristics disabled
 netsh int tcp set global rss=enabled
